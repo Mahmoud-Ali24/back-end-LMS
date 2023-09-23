@@ -4,7 +4,7 @@ const Student = require("../models/student.model");
 
 const httpStatusText = require("../utils/httpStatusText");
 const { json } = require("express");
-const asyncWrapper = require("../middlewares/asyncWrapper.JS");
+const asyncWrapper = require("../middlewares/asyncWrapper.js");
 const appError = require("../utils/appError");
 
 const getAllStudents = asyncWrapper(async (req, res, next) => {
